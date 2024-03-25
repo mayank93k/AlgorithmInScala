@@ -1,18 +1,18 @@
-package algorithm.scala.org
+package algorithm.scala.org.searching
 
 class linerSearch {
   /**
-    * About: Linear Search
-    * Given an array arr[] of n elements, To search a given element x in arr[] by using linear Search.
-    * The time complexity of  algorithm is O(n).
-    *
-    * @param a   -> Elements in array
-    * @param key -> key element to search
-    */
+   * About: Linear Search
+   * Given an array arr[] of n elements, To search a given element x in arr[] by using linear Search.
+   * The time complexity of  algorithm is O(n).
+   *
+   * @param a   -> Elements in array
+   * @param key -> key element to search
+   */
   def searchLinear(a: Array[Int], key: Int): Int = {
-    for (i <- 0 to a.length - 1)
+    for (i <- a.indices)
       if (a(i) == key)
-      return  i
+        return i
     -1
   }
 }
@@ -28,7 +28,7 @@ object linerSearch {
     if (output.equals(-1)) {
       println("Element not present")
     } else {
-      println("Element is present at index "+ output)
+      println("Element is present at index " + output)
     }
   }
 }

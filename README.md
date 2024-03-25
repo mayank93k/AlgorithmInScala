@@ -1,11 +1,12 @@
 # Project_Algorithm_Scala
-Algorithm in Scala
+
+     Algorithm in Scala language
 -------------------------------
 
-1. binarySearch.scala
-2. bubbleSort.scala
-3. insertionSort.scala
-4. linerSearch.scala
-5. mergeSort.scala
-6. quickSort.scala
-7. selectionSort.scala
+1. [x] binarySearch.scala
+2. [x] bubbleSort.scala
+3. [x] insertionSort.scala
+4. [x] linerSearch.scala
+5. [x] mergeSort.scala
+6. [x] quickSort.scala
+7. [x] selectionSort.scala

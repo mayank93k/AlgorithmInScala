@@ -1,16 +1,16 @@
-package algorithm.scala.org
+package algorithm.scala.org.sorting
 
 class mergeSort {
   /**
-    * About: MergeSort
-    * MergeSort is a Divide and Conquer algorithm. It divides input array in two halves, calls itself for the two halves and
-    * then merges the two sorted halves..
-    * The time complexity of  algorithm is O(nLogn).
-    *
-    * @param array -> Input array
-    * @param start -> Start position of array
-    * @param end   -> End position of array
-    */
+   * About: MergeSort
+   * MergeSort is a Divide and Conquer algorithm. It divides input array in two halves, calls itself for the two halves and
+   * then merges the two sorted halves..
+   * The time complexity of  algorithm is O(nLogn).
+   *
+   * @param array -> Input array
+   * @param start -> Start position of array
+   * @param end   -> End position of array
+   */
   def mergeSort(array: Array[Int], start: Int, end: Int): Unit = {
     if (start < end) {
       val mid: Int = (start + end) / 2
@@ -21,14 +21,25 @@ class mergeSort {
   }
 
   /**
-    * This method is used for merging two halves.
-    *
-    * @param arr   -> Input Array
-    * @param start -> Start position of array
-    * @param mid   ->  Mid position of array
-    * @param end   ->  End position of array
-    */
-  def merge(arr: Array[Int], start: Int, mid: Int, end: Int): Unit = {
+   * This method prints element of an array
+   *
+   * @param array -> Input array
+   */
+  def printArray(array: Array[Int]): Unit = {
+    for (i <- array.indices) {
+      print(array(i) + " ")
+    }
+  }
+
+  /**
+   * This method is used for merging two halves.
+   *
+   * @param arr   -> Input Array
+   * @param start -> Start position of array
+   * @param mid   ->  Mid position of array
+   * @param end   ->  End position of array
+   */
+  private def merge(arr: Array[Int], start: Int, mid: Int, end: Int): Unit = {
     var i = start
     var j = mid + 1
     var k = 0
@@ -58,17 +69,6 @@ class mergeSort {
 
     for (i <- start to end) {
       arr(i) = temp(i - start)
-    }
-  }
-
-  /**
-    * This method prints element of an array
-    *
-    * @param array -> Input array
-    */
-  def printArray(array: Array[Int]): Unit = {
-    for (i <- 0 to array.length - 1) {
-      print(array(i) + " ")
     }
   }
 }
