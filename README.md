@@ -1,4 +1,4 @@
-# Project_Algorithm_Scala
+# Algorithms
 
      Algorithm in Scala language
 -------------------------------
