@@ -1,4 +1,4 @@
-name := "Algorithm"
+name := "Algorithms in Scala"
 
 version := "0.1"
 
