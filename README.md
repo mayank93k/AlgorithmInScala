@@ -1,4 +1,5 @@
-# Algorithms
+# Algorithms in Scala
+A collection of common algorithms implemented in Scala, covering various topics such as sorting, searching, dynamic programming, graph algorithms, and more.
 
      Algorithm in Scala language
 -------------------------------
